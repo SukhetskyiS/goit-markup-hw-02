@@ -62,6 +62,7 @@ body {
 
 .site-nav .link.curent {
     color: var(--accent-color);
+    
 }
 /* site-contact */
 
@@ -177,7 +178,7 @@ body {
 }
 
 .address .link {
-    color: var(--adrress-link-color)
+    color: var(--adrress-link-color);
 }
 
 .address .link:hover,
@@ -190,11 +191,13 @@ body {
 .button {
     color: var(--title-text-color);
     background-color: var(--white-text-color);
+    font-family: inherit;
 }
 
 .button.primary {
     color: var(--white-text-color);
     background-color: var(--accent-color);
+    
 
     font-weight: 700;
     font-size: 16px;
@@ -236,4 +239,8 @@ body {
     font-size: 16px;
     line-height: 1.89;
     letter-spacing: 0.03em;
+}
+
+a {
+    text-decoration: none;
 }
