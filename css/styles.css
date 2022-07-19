@@ -15,6 +15,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+h1,h2,h3,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* .logo {
     font-family: Raleway, sans-serif;
 } */
@@ -87,8 +92,25 @@ body {
 
 /* section */
 
+.section {
+    margin-bottom: 94px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato
+}
+
+.hero .container {
+    padding-bottom: 94px;
+    padding-top: 186px;
+}
+
 .section.bgc {
     background-color: var(--background-color);
+    text-align: center;
 }
 
 .section-title.color {
@@ -100,8 +122,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -112,6 +139,10 @@ body {
 }
 
 /* hero */
+
+.hero {
+    background-color: var(--button-bgc);
+}
 
 .hero-title {
     color: var(--title-text-color);
@@ -159,6 +190,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.title {
+    margin-bottom: 10px;
+}
+
 /* footer */
 
 .address {
@@ -191,7 +226,12 @@ body {
 .button {
     color: var(--title-text-color);
     background-color: var(--white-text-color);
+    
     font-family: inherit;
+
+    display: inline-block;
+
+    border: none;
 }
 
 .button.primary {
@@ -208,6 +248,11 @@ body {
     letter-spacing: 0.06em;
 
     cursor: pointer;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200;
+
 }
 
 .button.secondary {
@@ -221,6 +266,9 @@ body {
     letter-spacing: 0.03em;
 
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
 }
 
 .button.secondary:hover,
